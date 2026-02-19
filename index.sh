@@ -13,13 +13,25 @@ content()
         trace_url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/$trace_name.gz
         start=$(( ts_ns - 10 ))
         end=$(( ts_ns + 1000 ))
-        perfetto_url="perfetto/#!/?url=$trace_url&visStart=$start&visEnd=$end&ts=$ts_ns"
-        echo "<a href="$perfetto_url">🔍</a> $out"
+        echo "<button onclick=\"trace('$trace_url', 'visStart=$start&visEnd=$end&ts=$ts_ns')\">+</button> $out"
     done
 }
 
 cat << EOF
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script>
+function trace(url, parameters) {
+viewer = document.getElementById('perfetto');
+viewer.src = 'perfetto/#!/?url=' + url + '&' + parameters;
+viewer.contentWindow.location.reload();
+}
+</script>
+</head>
 <body>
+<div>
+<iframe id="perfetto" src="perfetto/#!/" width="100vw" height="50vh"></iframe>
+</div>
 <pre>
 $(content)
 </pre>
