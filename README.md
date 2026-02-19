@@ -6,3 +6,5 @@
 How to set by default ns timestamp?
 
   sed -i -e '/TimestampFormat."Timecode"/d' docs/perfetto/v53.0-6d07acaaf/frontend_bundle.js
+
+perfetto use URL Startup commands to add a pin on timestamp + expand all lines
