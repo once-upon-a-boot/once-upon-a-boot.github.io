@@ -1,7 +1,31 @@
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>full screen iframe</title>
+    <style type="text/css">
+        html {
+            overflow: auto;
+        }
+        
+        html,
+        body,
+        div,
+        iframe {
+            margin: 0px;
+            padding: 0px;
+            height: 50%;
+            border: none;
+        }
+        
+        iframe {
+            display: block;
+            width: 100%;
+            border: none;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    </style>
 </head>
+
 <body>
-<iframe width="100vw" height="50vw" src="./exec.html" frameborder="0" allowfullscreen></iframe>
-<iframe width="100vw" height="50vw" src="perfetto/#!/?url=https://once-upon-a-boot.github.io/trace.gz" frameborder="0" allowfullscreen></iframe>
+<iframe src="./exec.html"></iframe>
+<iframe src="perfetto/#!/?url=https://once-upon-a-boot.github.io/trace.gz"></iframe>
 </body>
