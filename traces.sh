@@ -9,7 +9,7 @@ fi
 
 input()
 {
-    cat uftrace.data/exec.log | cut -f 1 -d ' ' | grep '^[0-9]'
+    cat uftrace.data/exec.log | cut -f 1 -d ' ' | grep '^[0-9]' || true
 }
 
 start=$(input | head -n 1)
@@ -25,7 +25,9 @@ for ts in $(seq $start $end); do
     here="$(pwd)/"
     url="https://github.com/once-upon-a-boot/code/blob/main/"
     # srcline requires recent uftrace
-    printf "uftrace dump --chrome --srcline --time-range=$range | sed -e \"s#$here#$url#\" | gzip -9 > traces/$ts.gz\n";
+    regex='s@%s\(.*\):@%s\\1#L@\'
+    cmd='uftrace dump --chrome --srcline --time-range=%s | sed -e '"'$regex'"' | gzip -9 > traces/%s.gz\n'
+    printf "$cmd" "$range" "$here" "$url" "$ts"
 done | parallel -j $(nproc) --bar
 
 du -h traces/
