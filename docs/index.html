@@ -1,3 +1,521 @@
 <body>
-1771528146
+<pre>
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> + '[' -v INIT ']'
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> + INIT=/host/host.sh
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> ++ pwd
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> + /home/user/.work/qemu/build/qemu-system-aarch64 -plugin /home/user/.work/qemu/build/..//build/contrib/plugins/libuftrace.so,trace-privilege-level=on -nodefaults -display none -serial mon:stdio -serial file:/dev/stdout -netdev user,id=vnet -device virtio-net-pci,netdev=vnet -M virt,secure=on,virtualization=on,gic-version=3,iommu=smmuv3,mte=on -cpu max -smp 1 -m 8G -bios ./out/flash.bin -kernel ./out/Image.gz -drive format=raw,file=./out/host.ext4,if=virtio -append 'nokaslr root=/dev/vda rw init=/init -- /host/host.sh' -virtfs local,path=/home/user/.work/qemu-linux-stack/,mount_tag=host,security_model=mapped,readonly=off
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> NOTICE: Booting Trusted Firmware
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> NOTICE: BL1: v2.14.0(debug):sandbox/v2.14
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> NOTICE: BL1: Built : 07:58:56, Feb 17 2026
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL1: RAM 0xe0ee000 - 0xe0f6000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL1: Loading BL2
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Loading image id=1 at address 0xe05b000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Image id=1 loaded: 0xe05b000 - 0xe064b6c
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> NOTICE: BL1: Booting BL2
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Entry point address = 0xe05b000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: SPSR = 0x3c5
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> NOTICE: BL2: v2.14.0(debug):sandbox/v2.14
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> NOTICE: BL2: Built : 07:58:58, Feb 17 2026
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Doing platform setup
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Loading image id 3
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Loading image id=3 at address 0xe090000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Image id=3 loaded: 0xe090000 - 0xe0a40d7
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Loading image id 4
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Loading image id=4 at address 0xe100000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Image id=4 loaded: 0xe100000 - 0xe1344e8
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Handoff to BL32
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Using default arguments
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Skip loading image id 21
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Skip loading image id 22
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Loading image id 26
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Loading image id=26 at address 0xe002000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Image id=26 loaded: 0xe002000 - 0xe00242d
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Loading image id 24
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Loading image id=24 at address 0xe001000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Image id=24 loaded: 0xe001000 - 0xe0010e9
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Loading image id 41
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Loading image id=41 at address 0xe300000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Image id=41 loaded: 0xe300000 - 0xe3ca170
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Skip loading image id 42
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Skip loading image id 43
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Skip loading image id 44
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Skip loading image id 45
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Skip loading image id 46
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Skip loading image id 47
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Skip loading image id 48
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: BL2: Loading image id 5
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz>🔍</a> INFO: Loading image id=5 at address 0x60000000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: Image id=5 loaded: 0x60000000 - 0x6019dd10
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> NOTICE: BL1: Booting BL31
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: Entry point address = 0xe090000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: SPSR = 0x3cd
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> NOTICE: BL31: v2.14.0(debug):sandbox/v2.14
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> NOTICE: BL31: Built : 07:58:58, Feb 17 2026
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: GICv3 without legacy support detected.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: ARM GICv3 driver initialized in EL3
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: Maximum SPI INTID supported: 287
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: BL31: Initializing runtime services
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: SPM Core setup done.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: BL31: Initializing BL32
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: Initializing Hafnium (SPMC)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: text: 0xe100000 - 0xe12c000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: rodata: 0xe12c000 - 0xe134000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: data: 0xe134000 - 0xe218000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: stacks: 0xe220000 - 0xe230000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: Supported bits in physical address: 48
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: Stage 2 has 5 page table levels with 1 pages at the root.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: Stage 1 has 5 page table levels with 1 pages at the root.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: Memory range: 0xe000000 - 0xeffffff
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: Unable to find '/interrupt-controller. Using default configuration.'
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: Loading VM id 0x8001: op-tee.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: Loaded with 4 vCPUs, entry at 0xe300000.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> INFO: Hafnium initialisation completed
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 get_fdt_from_boot_info:1312 Boot info descriptor name " "
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 core_mmu_set_secure_memory:182 Physical secure memory base 0xe300000 size 0xd00000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 get_aslr_seed:1251 No fdt
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 plat_get_aslr_seed:121 Warning: no ASLR seed
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 add_phys_mem:776 ram_start type SEC_RAM_OVERALL 0x0e300000 size 0x00004000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 collect_mem_ranges:1126 tee_ram_initial_offs 0x4000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 add_phys_mem:776 VCORE_UNPG_RX_PA type TEE_RAM_RX 0x0e304000 size 0x000c1000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 add_phys_mem:776 VCORE_UNPG_RW_PA type TEE_RAM_RW 0x0e3c5000 size 0x0004c000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 add_phys_mem:776 VCORE_UNPG_RW_PA type SEC_RAM_OVERALL 0x0e3c5000 size 0x0004c000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 add_phys_mem:776 VCORE_FREE_PA type TEE_RAM_RW 0x0e411000 size 0x000f3000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 merge_mmaps:729 Merging 0xe3c5000..0xe410fff and 0xe411000..0xe503fff
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 add_phys_mem:776 VCORE_FREE_PA type SEC_RAM_OVERALL 0x0e411000 size 0x000f3000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 merge_mmaps:729 Merging 0xe3c5000..0xe410fff and 0xe411000..0xe503fff
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 add_phys_mem:776 next_pa type SEC_RAM_OVERALL 0x0e504000 size 0x00afc000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 merge_mmaps:729 Merging 0xe3c5000..0xe503fff and 0xe504000..0xeffffff
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 add_phys_mem:776 uart1 type IO_SEC 0x09040000 size 0x00001000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 add_phys_mem:776 CONSOLE_UART_BASE type IO_SEC 0x09000000 size 0x00200000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 merge_mmaps:729 Merging 0x9040000..0x9040fff and 0x9000000..0x91fffff
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 add_va_space:820 type RES_VASPACE size 0x00a00000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 add_va_space:820 type SHM_VASPACE size 0x02000000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 add_va_space:820 type TEE_DYN_VASPACE size 0x00100000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 dump_mmap_table:946 type TEE_RAM_RX va 0x0e304000..0x0e3c4fff pa 0x0e304000..0x0e3c4fff size 0x000c1000 (smallpg)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 dump_mmap_table:946 type TEE_RAM_RW va 0x0e3c5000..0x0e503fff pa 0x0e3c5000..0x0e503fff size 0x0013f000 (smallpg)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 dump_mmap_table:946 type RES_VASPACE va 0x0e600000..0x0effffff pa 0x00000000..0x009fffff size 0x00a00000 (pgdir)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 dump_mmap_table:946 type TEE_DYN_VASPACE va 0x0f000000..0x0f0fffff pa 0x00000000..0x000fffff size 0x00100000 (pgdir)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 dump_mmap_table:946 type SHM_VASPACE va 0x0f200000..0x111fffff pa 0x00000000..0x01ffffff size 0x02000000 (pgdir)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 dump_mmap_table:946 type IO_SEC va 0x11200000..0x113fffff pa 0x09000000..0x091fffff size 0x00200000 (pgdir)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 dump_mmap_table:946 type SEC_RAM_OVERALL va 0x11400000..0x11403fff pa 0x0e300000..0x0e303fff size 0x00004000 (pgdir)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 dump_mmap_table:946 type SEC_RAM_OVERALL va 0x117c5000..0x123fffff pa 0x0e3c5000..0x0effffff size 0x00c3b000 (pgdir)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 add_padding:96 0xe411040 len 0xfc0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 core_mmu_xlat_table_alloc:699 xlat tables used 1
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 core_mmu_xlat_table_alloc:699 xlat tables used 2
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 core_mmu_xlat_table_alloc:699 xlat tables used 3
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 core_mmu_xlat_table_alloc:699 xlat tables used 4
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 core_mmu_xlat_table_alloc:699 xlat tables used 5
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 core_mmu_xlat_table_alloc:699 xlat tables used 6
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 mmap_clear_memtag:366 Clearing tags for VA 0x11400000..0x11403fff
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 mmap_clear_memtag:366 Clearing tags for VA 0x117c5000..0x123fffff
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> I/TC: 
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 carve_out_core_mem:2776 0xe304000 .. 0xe504000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 boot_mem_foreach_padding:268 consumed 0xe411040 0xe411040 len 0xfc0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 boot_mem_release_unused:294 Allocated 36960 bytes at va 0xe411000 pa 0xe411000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 boot_mem_release_unused:298 Tempalloc 33864 bytes at va 0xe4fbbb8
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 boot_mem_release_unused:320 Carving out 0xe304000..0xe41a05f
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528147.gz>🔍</a> D/TC:0 boot_mem_release_unused:329 Releasing 921504 bytes from va 0xe41b000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> I/TC: No non-secure external DT
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> I/TC: manifest DT found
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 discover_nsec_memory:151 No non-secure memory found in manifest DT
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> I/TC: Embedded DTB found
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 discover_nsec_memory:175 No non-secure memory found in embedded DT
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 get_console_node_from_dt:105 No console directive from DTB
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> I/TC: OP-TEE version: 4.9.0 (gcc version 14.2.0 (Debian 14.2.0-19)) #1 Wed Feb 18 21:07:49 UTC 2026 aarch64
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> I/TC: WARNING: This OP-TEE configuration might be insecure!
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> I/TC: WARNING: Please check https://optee.readthedocs.io/en/latest/architecture/porting_guidelines.html
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> I/TC: Primary CPU initializing
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 boot_init_primary_runtime:1052 Executing at offset 0 with virtual load address 0xe304000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 boot_init_primary_runtime:1060 Memory tagging enabled
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 preinitcall level 2 mapped_shm_init()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 mapped_shm_init:936 Shared memory address range: 0xf200000, 0x11200000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 early_initcall level 2 probe_dt_drivers_early()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 add_node_to_probe:705 element: dt-test-consumer on node dt-test-consumer
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 add_node_to_probe:705 element: simple-bus on node dt-test-bus-b0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 add_node_to_probe:705 element: dt-test-crypt-consumer on node dt-test-crypt-consumer
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:513 element: dt-test-crypt-consumer on node dt-test-crypt-consumer deferred 1 time(s)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 add_node_to_probe:705 element: simple-bus on node dt-test-bus-b1
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:507 element: simple-bus on node dt-test-bus-b0 initialized
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:513 element: dt-test-consumer on node dt-test-consumer deferred 1 time(s)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:513 element: dt-test-consumer on node dt-test-consumer deferred 2 time(s)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 add_node_to_probe:705 element: simple-bus on node dt-test-bus-b2
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:507 element: simple-bus on node dt-test-bus-b1 initialized
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:513 element: dt-test-crypt-consumer on node dt-test-crypt-consumer deferred 2 time(s)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:513 element: dt-test-crypt-consumer on node dt-test-crypt-consumer deferred 3 time(s)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 add_node_to_probe:705 element: simple-bus on node dt-test-bus-b3
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:507 element: simple-bus on node dt-test-bus-b2 initialized
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:513 element: dt-test-consumer on node dt-test-consumer deferred 3 time(s)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:513 element: dt-test-consumer on node dt-test-consumer deferred 4 time(s)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 add_node_to_probe:705 element: dt_test_clock_provider on node dt-test-provider@0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 add_node_to_probe:705 element: dt_test_rstctrl_provider on node dt-test-provider@0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 add_node_to_probe:705 element: dt_test_gpio_provider on node dt-test-provider@0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:507 element: simple-bus on node dt-test-bus-b3 initialized
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:513 element: dt-test-crypt-consumer on node dt-test-crypt-consumer deferred 4 time(s)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:513 element: dt-test-crypt-consumer on node dt-test-crypt-consumer deferred 5 time(s)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:507 element: dt_test_gpio_provider on node dt-test-provider@0 initialized
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:507 element: dt_test_rstctrl_provider on node dt-test-provider@0 initialized
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 clk_register:127 Registered clock dt_test-clk3, freq 0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 clk_register:127 Registered clock dt_test-clk7, freq 0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:507 element: dt_test_clock_provider on node dt-test-provider@0 initialized
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:507 element: dt-test-consumer on node dt-test-consumer initialized
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:513 element: dt-test-crypt-consumer on node dt-test-crypt-consumer deferred 6 time(s)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 process_probe_list:654 Unresolved dependencies after 6 rounds, 6 deferred
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_dt_drivers_early:840 Deferred drivers probing
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 print_probe_list:461 Probe list: 1 elements
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 print_probe_list:463 |- Driver dt-test-crypt-consumer probes on node dt-test-crypt-consumer
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 print_probe_list:467 `- Probe list end
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 print_probe_list:473 Failed list: 0 elements
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 print_probe_list:478 `- Failed list end
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 service_initcall level 1 tee_cryp_init()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 service_initcall level 2 spmc_init()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 spmc_init:2818 SPMC reported version 1.3
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 spmc_init:2828 Using version 1.2
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 spmc_init:2835 SPMC ID 0x8000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 spmc_init:2838 OP-TEE endpoint ID 0x8001
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 spmc_init:2843 Asynchronous notifications are ready
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 service_initcall level 2 check_ta_store()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 check_ta_store:460 TA store: "Secure Storage TA"
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 check_ta_store:460 TA store: "REE"
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 service_initcall level 2 verify_pseudo_tas_conformance()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 service_initcall level 3 tee_fs_init_key_manager()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 boot_mem_release_tmp_alloc:370 Releasing 36864 bytes from va 0xe4fb000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 driver_initcall level 1 init_console_itr()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 driver_initcall level 1 probe_dt_drivers()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 probe_driver_node:507 element: dt-test-crypt-consumer on node dt-test-crypt-consumer initialized
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 driver_initcall level 2 init_multi_core_halt_handler()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 driver_initcall level 2 mobj_init()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 driver_initcall level 2 default_mobj_init()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 driver_initcall level 2 ftmn_boot_tests()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 ftmn_boot_tests:198 Calling simple_call()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 ftmn_boot_tests:198 Return from simple_call()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 ftmn_boot_tests:199 Calling two_level_call()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 ftmn_boot_tests:199 Return from two_level_call()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 ftmn_boot_tests:200 Calling chained_calls()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 ftmn_boot_tests:200 Return from chained_calls()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 ftmn_boot_tests:202 *************************************************
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 ftmn_boot_tests:203 docs exec.log files.sh index.html index.sh traces.sh Tests complete *****************
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 ftmn_boot_tests:204 *************************************************
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 driver_initcall level 3 release_node_cache_info()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 driver_initcall level 3 release_probe_lists()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 driver_initcall level 3 dt_test_release()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 finalcall level 8 release_external_dt()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> D/TC:0 0 do_init_calls:19 finalcall level 8 release_manifest_dt()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> I/TC: Primary CPU switching to normal world boot
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> NOTICE: Finished bootstrapping all SPs on CPU0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> INFO: BL31: Preparing for EL3 exit to normal world
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> INFO: Entry point address = 0x60000000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> INFO: SPSR = 0x3c9
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> Bloblist at 0 not found (err=-2)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> alloc space exhausted ptr 400 limit 0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> Bloblist at 0 not found (err=-2)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> 
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> 
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> U-Boot 2026.01 (Feb 19 2026 - 18:51:01 +0000)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> 
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> DRAM: 8 GiB
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528148.gz>🔍</a> using memory 0x23e620000-0x23f660000 for malloc()
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528149.gz>🔍</a> Core: 51 devices, 14 uclasses, devicetree: board
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528149.gz>🔍</a> Flash: 32 MiB
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528149.gz>🔍</a> Loading Environment from Flash... docs exec.log files.sh index.html index.sh traces.sh Warning - bad CRC, using default environment
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528149.gz>🔍</a> 
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528149.gz>🔍</a> In: serial,usbkbd
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528149.gz>🔍</a> Out: serial,vidconsole
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528149.gz>🔍</a> Err: serial,vidconsole
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528150.gz>🔍</a> No USB controllers found
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528150.gz>🔍</a> Net: eth0: virtio-net#32
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528150.gz>🔍</a> [?25h
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> Hit any key to stop autoboot: 1 Hit any key to stop autoboot: 0[K
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> Scanning for bootflows in all bootdevs
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> Seq Method State Uclass Part Name Filename
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> --- ----------- ------ -------- ---- ------------------------ ----------------
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> Scanning global bootmeth 'efi_mgr':
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> 7[r[999;999H[6n8Cannot persist EFI variables without system partition
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> Missing TPMv2 device for EFI_TCG_PROTOCOL
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> Missing RNG device for EFI_RNG_PROTOCOL
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> 0 efi_mgr ready (none) 0 <NULL> 
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> docs exec.log files.sh index.html index.sh traces.sh Booting bootflow '<NULL>' with efi_mgr
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> Loading Boot0000 'virtio 0' failed
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> EFI boot manager: Cannot load any image
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> Boot failed (err=-14)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> Scanning bootdev 'fw-cfg@9020000.bootdev':
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> warning: no initrd available
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> loading kernel to address 40400000 size 275da00
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> 1 qfw ready qfw 0 qfw 
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> docs exec.log files.sh index.html index.sh traces.sh Booting bootflow 'qfw' with qfw
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> ## Flattened Device Tree blob at 23e61db60
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> Booting using the fdt blob at 0x23e61db60
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> Working FDT set to 23e61db60
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> Loading Ramdisk to fd8a2000, end fffffa00 ... OK
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> Loading Device Tree to 00000000fd89c000, end 00000000fd8a1251 ... OK
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528151.gz>🔍</a> Working FDT set to fd89c000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528152.gz>🔍</a> 
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528152.gz>🔍</a> Starting kernel ...
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528152.gz>🔍</a> 
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Booting Linux on physical CPU 0x0000000000 [0x000f0510]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Linux version 6.19.0-00001-gf50fdcb08603 (root@pc) (aarch64-linux-gnu-gcc (Debian 14.2.0-19) 14.2.0, GNU ld (GNU Binutils for Debian) 2.44) #1 SMP PREEMPT Wed Feb 18 21:06:58 UTC 2026
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] KASLR disabled on command line
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] random: crng init done
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Machine model: linux,dummy-virt
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] efi: UEFI not found.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] OF: reserved mem: Reserved memory: No reserved-memory node in the DT
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x000000023fffffff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] NODE_DATA(0) allocated [mem 0x23eff6140-0x23eff87bf]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Zone ranges:
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] DMA [mem 0x0000000040000000-0x00000000ffffffff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] DMA32 empty
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Normal [mem 0x0000000100000000-0x000000023fffffff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Movable zone start for each node
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Early memory node ranges
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] node 0: [mem 0x0000000040000000-0x000000023fffffff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x000000023fffffff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] cma: Reserved 32 MiB at 0x00000000fb800000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] psci: probing for conduit method from DT.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] psci: PSCIv1.1 detected in firmware.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] psci: Using standard PSCI v0.2 function IDs
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] psci: MIGRATE_INFO_TYPE not supported.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] psci: SMC Calling Convention v1.5
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] percpu: Embedded 24 pages/cpu s61400 r8192 d28712 u98304
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Detected PIPT I-cache on CPU0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] CPU features: detected: Address authentication (IMP DEF algorithm)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] CPU features: detected: GICv3 CPU interface
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] CPU features: detected: HCRX_EL2 register
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] CPU features: detected: Stage-1 Permission Indirection Extension (S1PIE)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] CPU features: detected: 52-bit Virtual Addressing (LPA2)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] CPU features: detected: Virtualization Host Extensions
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] CPU features: detected: Memory Tagging Extension
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] CPU features: detected: Asymmetric MTE Tag Check Fault
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] CPU features: detected: Spectre-v4
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] alternatives: applying boot alternatives
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Kernel command line: nokaslr root=/dev/vda rw init=/init -- /host/host.sh
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] printk: log buffer data + meta data: 131072 + 458752 = 589824 bytes
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] software IO TLB: area num 1.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] software IO TLB: mapped [mem 0x00000000f7800000-0x00000000fb800000] (64MB)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Fallback order for Node 0: 0 
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Built 1 zonelists, mobility grouping on. Total pages: 2097152
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Policy zone: Normal
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] rcu: Preemptible hierarchical RCU implementation.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] rcu: RCU event tracing is enabled.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] rcu: RCU restricting CPUs from NR_CPUS=512 to nr_cpu_ids=1.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Trampoline variant of Tasks RCU enabled.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Tracing variant of Tasks RCU enabled.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] RCU Tasks: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=1.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] RCU Tasks Trace: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=1.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] GICv3: GIC: Using split EOI/Deactivate mode
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] GICv3: 256 SPIs implemented
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] GICv3: 0 Extended SPIs implemented
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] Root IRQ handler: gic_handle_irq
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] GICv3: GICv3 features: 16 PPIs
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] GICv3: GICD_CTLR.DS=0, SCR_EL3.FIQ=1
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] GICv3: CPU0: found redistributor 0 region 0:0x00000000080a0000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] ITS [mem 0x08080000-0x0809ffff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] ITS@0x0000000008080000: allocated 8192 Devices @100040000 (indirect, esz 8, psz 64K, shr 1)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] ITS@0x0000000008080000: allocated 8192 Interrupt Collections @100050000 (flat, esz 8, psz 64K, shr 1)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] GICv3: using LPI property table @0x0000000100060000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] GICv3: CPU0: using allocated LPI pending table @0x0000000100070000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] arch_timer: cp15 timer running at 1000.00MHz (phys).
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000000] clocksource: arch_sys_counter: mask: 0x1fffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.000245] sched_clock: 61 bits at 1000MHz, resolution 1ns, wraps every 4398046511103ns
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.074568] Console: colour dummy device 80x25
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.084794] printk: legacy console [tty0] enabled
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.137831] Calibrating delay loop (skipped), value calculated using timer frequency.. 2000.00 BogoMIPS (lpj=10000000)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.141057] pid_max: default: 32768 minimum: 301
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.179259] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.180543] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.340829] cacheinfo: Unable to detect cache hierarchy for CPU 0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.404441] rcu: Hierarchical SRCU implementation.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.407062] rcu: Max phase no-delay instances is 1000.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.434512] fsl-mc MSI: its@8080000 domain created
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.465865] EFI services will not be available.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.470875] smp: Bringing up secondary CPUs ...
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.474761] smp: Brought up 1 node, 1 CPU
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.475295] SMP: Total of 1 processors activated.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.475815] CPU: All CPU(s) started at EL2
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.477392] CPU features: detected: Branch Target Identification
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.483334] CPU features: detected: 32-bit EL0 Support
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.483867] CPU features: detected: 32-bit EL1 Support
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.484374] CPU features: detected: ARMv8.4 Translation Table Level
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.484952] CPU features: detected: Instruction cache invalidation not required for I/D coherence
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.485636] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.486400] CPU features: detected: Common not Private translations
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.486897] CPU features: detected: CRC32 instructions
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.487325] CPU features: detected: Data independent timing control (DIT)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.487812] CPU features: detected: E0PD
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.488193] CPU features: detected: Enhanced Counter Virtualization
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.491525] CPU features: detected: Enhanced Counter Virtualization (CNTPOFF)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.492050] CPU features: detected: Enhanced Privileged Access Never
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.492534] CPU features: detected: Enhanced Virtualization Traps
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.493071] CPU features: detected: Fine Grained Traps
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.493651] CPU features: detected: Guarded Control Stack (GCS)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.494389] CPU features: detected: Generic authentication (IMP DEF algorithm)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.495218] CPU features: detected: RCpc load-acquire (LDAPR)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.495853] CPU features: detected: 52-bit Virtual Addressing for KVM (LPA2)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.496372] CPU features: detected: LSE atomic instructions
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.496833] CPU features: detected: Memory Copy and Memory Set instructions
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.497338] CPU features: detected: Privileged Access Never
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.497942] CPU features: detected: PMUv3
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.498340] CPU features: detected: SCTLR2
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.498735] CPU features: detected: RAS Extension Support
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.501263] CPU features: detected: RASv1p1 Extension Support
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.501735] CPU features: detected: Random Number Generator
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.502178] CPU features: detected: Speculation barrier (SB)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.502622] CPU features: detected: Stage-2 Force Write-Back
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.503079] CPU features: detected: Trap EL0 IMPLEMENTATION DEFINED functionality
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.503635] CPU features: detected: TLB range maintenance instructions
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.504117] CPU features: detected: WFx with timeout
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.504543] CPU features: detected: XNX
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.505375] CPU features: detected: Scalable Matrix Extension
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.505856] CPU features: detected: FA64
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.506245] CPU features: detected: SME2
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.506634] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.507143] CPU features: detected: Scalable Vector Extension
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.542834] alternatives: applying system-wide alternatives
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.630221] CPU features: detected: ICV_DIR_EL1 trapping
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.632050] CPU features: detected: Hardware dirty bit management on CPU0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.634697] SVE: maximum available vector length 256 bytes per vector
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.635362] SVE: default vector length 64 bytes per vector
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.636132] SME: minimum available vector length 16 bytes per vector
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.636591] SME: maximum available vector length 256 bytes per vector
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.637053] SME: default vector length 32 bytes per vector
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.725173] Memory: 8044228K/8388608K available (18624K kernel code, 4918K rwdata, 13340K rodata, 3264K init, 688K bss, 308644K reserved, 32768K cma-reserved)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 0.847161] devtmpfs: initialized
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.106330] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.111593] posixtimers hash table entries: 512 (order: 1, 8192 bytes, linear)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.113540] futex hash table entries: 256 (16384 bytes on 1 NUMA nodes, total 16 KiB, linear).
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.126486] 22496 pages in range for non-PLT usage
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.126828] 514016 pages in range for PLT usage
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.221743] DMI not present or invalid.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.362430] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.425948] DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.432255] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.434046] audit: initializing netlink subsys (disabled)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.442975] audit: type=2000 audit(1.250:1): state=initialized audit_enabled=0 res=1
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.484678] thermal_sys: Registered thermal governor 'step_wise'
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.484928] thermal_sys: Registered thermal governor 'power_allocator'
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.487438] cpuidle: using governor menu
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.496304] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.498300] ASID allocator initialised with 65536 entries
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 1.571185] Serial: AMBA PL011 UART driver
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.264622] 9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 15, base_baud = 0) is a PL011 rev1
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.275900] printk: console [ttyAMA0] enabled
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.558051] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.560124] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.562190] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.564306] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.566606] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.568726] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.570828] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.572910] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.643333] ACPI: Interpreter disabled.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.750735] iommu: Default domain type: Translated
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.752959] iommu: DMA domain TLB invalidation policy: strict mode
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.764914] SCSI subsystem initialized
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.783665] usbcore: registered new interface driver usbfs
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.787413] usbcore: registered new interface driver hub
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528158.gz>🔍</a> [ 2.790340] usbcore: registered new device driver usb
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 2.829736] pps_core: LinuxPPS API ver. 1 registered
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 2.831695] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 2.835254] PTP clock support registered
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 2.841108] EDAC MC: Ver: 3.0.0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 2.853524] scmi_core: SCMI protocol bus registered
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 2.888881] FPGA manager framework
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 2.951765] vgaarb: loaded
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.008443] clocksource: Switched to clocksource arch_sys_counter
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.021123] VFS: Disk quotas dquot_6.6.0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.023154] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.038972] pnp: PnP ACPI: disabled
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.223391] NET: Registered PF_INET protocol family
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.263886] IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.339521] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.391736] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.394390] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.413147] TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.449369] TCP: Hash tables configured (established 65536 bind 65536)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.457091] UDP hash table entries: 4096 (order: 6, 262144 bytes, linear)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.486735] UDP-Lite hash table entries: 4096 (order: 6, 262144 bytes, linear)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.497551] NET: Registered PF_UNIX/PF_LOCAL protocol family
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.512242] RPC: Registered named UNIX socket transport module.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.514239] RPC: Registered udp transport module.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.515813] RPC: Registered tcp transport module.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.517673] RPC: Registered tcp-with-tls transport module.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.519451] RPC: Registered tcp NFSv4.1 backchannel transport module.
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.521805] PCI: CLS 0 bytes, default 64
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.543923] ARM FF-A: Driver version 1.2
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.545651] ARM FF-A: Firmware version 1.3 found
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.547913] ARM FF-A: Firmware version higher than driver version, downgrading
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.608626] Unpacking initramfs...
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528159.gz>🔍</a> [ 3.610582] Initramfs unpacking failed: invalid magic at start of compressed archive
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 3.861912] kvm [1]: nv: 568 coarse grained trap handlers
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 3.919440] kvm [1]: nv: 664 fine grained trap handlers
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 3.960001] kvm [1]: IPA Size Limit: 52 bits
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 3.964649] kvm [1]: GICv3: no GICV resource entry
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 3.966788] kvm [1]: disabling GICv2 emulation
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 3.969042] kvm [1]: GIC system register CPU interface enabled
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 3.971708] kvm [1]: vgic interrupt IRQ9
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 3.980176] kvm [1]: VHE mode initialized successfully
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.060830] Initialise system trusted keyrings
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.078859] workingset: timestamp_bits=42 max_order=21 bucket_order=0
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.104927] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.121631] NFS: Registering the id_resolver key type
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.129526] Key type id_resolver registered
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.138118] Key type id_legacy registered
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.141470] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.143787] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.158013] 9p: Installing v9fs 9p2000 file system support
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.188548] Freeing initrd memory: 40308K
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.673516] Key type asymmetric registered
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.675403] Asymmetric key parser 'x509' registered
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.678611] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.681347] io scheduler mq-deadline registered
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.683207] io scheduler kyber registered
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528160.gz>🔍</a> [ 4.686489] io scheduler bfq registered
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.093876] ledtrig-cpu: registered to indicate activity on CPUs
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.130218] pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.136315] pci-host-generic 4010000000.pcie: IO 0x003eff0000..0x003effffff -> 0x0000000000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.141274] pci-host-generic 4010000000.pcie: MEM 0x0010000000..0x003efeffff -> 0x0010000000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.144070] pci-host-generic 4010000000.pcie: MEM 0x8000000000..0xffffffffff -> 0x8000000000
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.150420] pci-host-generic 4010000000.pcie: Memory resource size exceeds max for 32 bits
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.155952] pci-host-generic 4010000000.pcie: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.168071] pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.171563] pci_bus 0000:00: root bus resource [bus 00-ff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.173864] pci_bus 0000:00: root bus resource [io 0x0000-0xffff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.176181] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.178804] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.189090] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000 conventional PCI endpoint
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.215554] pci 0000:00:01.0: [1af4:1000] type 00 class 0x020000 conventional PCI endpoint
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.221575] pci 0000:00:01.0: BAR 0 [io 0x1000-0x101f]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.223742] pci 0000:00:01.0: BAR 1 [mem 0x10000000-0x10000fff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.225983] pci 0000:00:01.0: BAR 4 [mem 0x10004000-0x10007fff 64bit pref]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.229027] pci 0000:00:01.0: ROM [mem 0x10040000-0x1007ffff pref]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.237736] pci 0000:00:02.0: [1af4:1009] type 00 class 0x000200 conventional PCI endpoint
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.242134] pci 0000:00:02.0: BAR 0 [io 0x1020-0x103f]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.244230] pci 0000:00:02.0: BAR 1 [mem 0x10080000-0x10080fff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.246383] pci 0000:00:02.0: BAR 4 [mem 0x10084000-0x10087fff 64bit pref]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.254160] pci 0000:00:03.0: [1af4:1001] type 00 class 0x010000 conventional PCI endpoint
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.259208] pci 0000:00:03.0: BAR 0 [io 0x1080-0x10ff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.261358] pci 0000:00:03.0: BAR 1 [mem 0x10088000-0x10088fff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.263546] pci 0000:00:03.0: BAR 4 [mem 0x1008c000-0x1008ffff 64bit pref]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.298457] pci 0000:00:01.0: ROM [mem 0x10000000-0x1003ffff pref]: assigned
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.301850] pci 0000:00:01.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]: assigned
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.306062] pci 0000:00:02.0: BAR 4 [mem 0x8000004000-0x8000007fff 64bit pref]: assigned
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.310370] pci 0000:00:03.0: BAR 4 [mem 0x8000008000-0x800000bfff 64bit pref]: assigned
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.314279] pci 0000:00:01.0: BAR 1 [mem 0x10040000-0x10040fff]: assigned
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.318146] pci 0000:00:02.0: BAR 1 [mem 0x10041000-0x10041fff]: assigned
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.320920] pci 0000:00:03.0: BAR 1 [mem 0x10042000-0x10042fff]: assigned
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.323805] pci 0000:00:03.0: BAR 0 [io 0x1000-0x107f]: assigned
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.326662] pci 0000:00:01.0: BAR 0 [io 0x1080-0x109f]: assigned
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.329855] pci 0000:00:02.0: BAR 0 [io 0x10a0-0x10bf]: assigned
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.334067] pci_bus 0000:00: resource 4 [io 0x0000-0xffff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.336337] pci_bus 0000:00: resource 5 [mem 0x10000000-0x3efeffff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> [ 5.338897] pci_bus 0000:00: resource 6 [mem 0x8000000000-0xffffffffff]
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> QEMU: Terminated
+<a href=perfetto/#!/?url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz>🔍</a> 
+</pre>
 </body>
