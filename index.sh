@@ -13,7 +13,9 @@ content()
         trace_url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/$trace_name.gz
         start=$(( ts_ns - 10 ))
         end=$(( ts_ns + 1000 ))
-        echo "<button onclick=\"trace('$trace_url', 'visStart=$start&visEnd=$end&ts=$ts_ns')\">+</button> $out"
+        cat << EOF
+<button class="output" onclick="trace('$trace_url', 'visStart=$start&visEnd=$end&ts=$ts_ns')">+</button>$out
+EOF
     done
 }
 
@@ -24,19 +26,30 @@ cat << EOF
 .left
 {
     position: static;
+    padding: 0px;
+    margin: 0px;
 }
 
 .right
 {
-    height: 95vh;
+    height: 100vh;
     position: static;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: auto;
+    margin: 0px;
+    padding: 0px;
 }
 .viewer
 {
-    height: 95vh;
-    width:75vw;
+    height: 100vh;
+    width:70vw;
+    margin: 0px;
+    padding: 0px;
+}
+.output
+{
+    margin: 0px;
+    padding: 0px;
 }
 </style>
 <script>
@@ -51,7 +64,7 @@ viewer.contentWindow.location.reload();
 <body>
 <div style="display: flex">
 <div class="left">
-<iframe class="viewer" id="perfetto" src="perfetto/#!/"></iframe>
+<iframe target="_parent" class="viewer" id="perfetto" src="perfetto/#!/"></iframe>
 </div>
 <div class="right">
 <pre>
