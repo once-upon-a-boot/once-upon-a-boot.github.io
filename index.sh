@@ -19,6 +19,26 @@ content()
 
 cat << EOF
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+.left
+{
+    position: static;
+}
+
+.right
+{
+    height: 95vh;
+    position: static;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.viewer
+{
+    height: 95vh;
+    width:75vw;
+}
+</style>
 <script>
 function trace(url, parameters) {
 viewer = document.getElementById('perfetto');
@@ -27,10 +47,17 @@ viewer.contentWindow.location.reload();
 }
 </script>
 </head>
+
 <body>
-<iframe id="perfetto" src="perfetto/#!/" width="1440px" height="600px"></iframe>
+<div style="display: flex">
+<div class="left">
+<iframe class="viewer" id="perfetto" src="perfetto/#!/"></iframe>
+</div>
+<div class="right">
 <pre>
 $(content)
 </pre>
+</div>
+</div>
 </body>
 EOF

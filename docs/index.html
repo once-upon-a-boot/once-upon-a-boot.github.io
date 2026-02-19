@@ -1,4 +1,24 @@
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+.left
+{
+    position: static;
+}
+
+.right
+{
+    height: 95vh;
+    position: static;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.viewer
+{
+    height: 95vh;
+    width:75vw;
+}
+</style>
 <script>
 function trace(url, parameters) {
 viewer = document.getElementById('perfetto');
@@ -7,8 +27,13 @@ viewer.contentWindow.location.reload();
 }
 </script>
 </head>
+
 <body>
-<iframe id="perfetto" src="perfetto/#!/" width="1440px" height="600px"></iframe>
+<div style="display: flex">
+<div class="left">
+<iframe class="viewer" id="perfetto" src="perfetto/#!/"></iframe>
+</div>
+<div class="right">
 <pre>
 <button onclick="trace('https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz', 'visStart=1771528146050421990&visEnd=1771528146050423000&ts=1771528146050422000')">+</button> + '[' -v INIT ']'
 <button onclick="trace('https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528146.gz', 'visStart=1771528146050463990&visEnd=1771528146050465000&ts=1771528146050464000')">+</button> + INIT=/host/host.sh
@@ -528,4 +553,6 @@ viewer.contentWindow.location.reload();
 <button onclick="trace('https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz', 'visStart=1771528161536403990&visEnd=1771528161536405000&ts=1771528161536404000')">+</button> QEMU: Terminated
 <button onclick="trace('https://raw.githubusercontent.com/once-upon-a-boot/traces/main/1771528161.gz', 'visStart=1771528161580461990&visEnd=1771528161580463000&ts=1771528161580462000')">+</button> 
 </pre>
+</div>
+</div>
 </body>
