@@ -3,4 +3,6 @@
   ui/build
   ls out/ui/ui/dist
 
+How to set by default ns timestamp?
+
   sed -i -e '/TimestampFormat."Timecode"/d' docs/perfetto/v53.0-6d07acaaf/frontend_bundle.js
