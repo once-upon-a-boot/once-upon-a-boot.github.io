@@ -32,7 +32,7 @@ cat << EOF
 
 .right
 {
-    height: 95vh;
+    height: 98vh;
     position: static;
     overflow-y: auto;
     overflow-x: auto;
@@ -41,7 +41,7 @@ cat << EOF
 }
 .viewer
 {
-    height: 95vh;
+    height: 98vh;
     width:70vw;
     margin: 0px;
     padding: 0px;
