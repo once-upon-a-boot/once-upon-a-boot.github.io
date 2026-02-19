@@ -19,7 +19,6 @@ content()
 
 cat << EOF
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <script>
 function trace(url, parameters) {
 viewer = document.getElementById('perfetto');
@@ -29,9 +28,7 @@ viewer.contentWindow.location.reload();
 </script>
 </head>
 <body>
-<div>
-<iframe id="perfetto" src="perfetto/#!/" width="100vw" height="50vh"></iframe>
-</div>
+<iframe id="perfetto" src="perfetto/#!/" width="1440px" height="600px"></iframe>
 <pre>
 $(content)
 </pre>
