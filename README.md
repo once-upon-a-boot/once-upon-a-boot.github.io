@@ -16,9 +16,9 @@ perfetto use URL Startup commands to add a pin on timestamp + expand all lines
 
 - add all files for every subrepo + copy licenses
 
-Files packaging: trace.sh, get realpath to binaries to use canonical path to
-reference source code in output
+timestamp to milliseconds default?
 
 Solve automatic focus on perfetto window after clicking button
+missing W + S navigation?
 
 Add W-A-S-D tutorial at the top
