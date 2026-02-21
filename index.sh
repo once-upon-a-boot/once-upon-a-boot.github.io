@@ -23,6 +23,8 @@ EOF
     done
 }
 
+events="$(all_events)"
+
 content()
 {
     id=0
@@ -92,7 +94,7 @@ const commands = [
  'id': 'dev.perfetto.ExpandTracksByRegex',
  'args': ['.*']
 },
-$(all_events)
+$events
 {
  'id': 'dev.perfetto.AddNote',
  'args': [ts_us.toString(), ts_label, '#ff2222']
