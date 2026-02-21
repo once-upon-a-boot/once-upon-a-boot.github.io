@@ -14,6 +14,8 @@ perfetto use URL Startup commands to add a pin on timestamp + expand all lines
 - perfetto set default timestamp to timeNs
 - show timestamp on log when selected
 
+- add all files for every subrepo + copy licenses
+
 Files packaging: trace.sh, get realpath to binaries to use canonical path to
 reference source code in output
 
