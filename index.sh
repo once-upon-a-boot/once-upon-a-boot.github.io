@@ -4,6 +4,7 @@ set -euo pipefail
 
 content()
 {
+    id=0
     cat ./exec.log | while read line; do
         ts=$(echo $line | cut -f 1 -d ' ')
         ts_ms=$(echo $ts | sed -e 's/\.//')
@@ -14,8 +15,9 @@ content()
         start=$(( ts_ns - 100000 ))
         end=$(( ts_ns + 100000 ))
         cat << EOF
-<button class="output" onclick="trace('$trace_url', 'visStart=$start&visEnd=$end&ts=$ts_ns')">+</button>$out
+<button id="select_$id" class="output" onclick="trace('select_$id', '$trace_url', 'visStart=$start&visEnd=$end&ts=$ts_ns')">+</button>$out
 EOF
+        id=$((id + 1))
     done
 }
 
@@ -53,8 +55,15 @@ cat << EOF
 }
 </style>
 <script>
-function trace(url, parameters) {
+var selected;
+function trace(selection, url, parameters) {
 viewer = document.getElementById('perfetto');
+b = document.getElementById(selection);
+if (selected) {
+    selected.style='';
+}
+b.style='background-color:red';
+selected = b;
 
 const commands = [
 {
@@ -67,6 +76,7 @@ const startup_commands = encodeURIComponent(JSON.stringify(commands));
 
 viewer.src = 'perfetto/#!/?url=' + url + '&' + parameters + '&startupCommands=' + startup_commands;
 viewer.contentWindow.location.reload();
+}
 </script>
 </head>
 
