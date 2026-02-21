@@ -57,6 +57,7 @@ function trace(url, parameters) {
 viewer = document.getElementById('perfetto');
 viewer.src = 'perfetto/#!/?url=' + url + '&' + parameters;
 viewer.contentWindow.location.reload();
+viewer.focus();
 }
 </script>
 </head>
