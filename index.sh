@@ -67,11 +67,6 @@ const startup_commands = encodeURIComponent(JSON.stringify(commands));
 
 viewer.src = 'perfetto/#!/?url=' + url + '&' + parameters + '&startupCommands=' + startup_commands;
 viewer.contentWindow.location.reload();
-viewer.focus();
-
-var event = new MouseEvent('mouseover', {})
-viewer.dispatchEvent(event);
-}
 </script>
 </head>
 
