@@ -2,6 +2,27 @@
 
 set -euo pipefail
 
+all_events()
+{
+    cat ./exec.log | while read line; do
+        ts=$(echo $line | cut -f 1 -d ' ')
+        ts_us=$(echo $ts | sed -e 's/\.//')
+        ts_ns=$(( ts_us * 1000 ))
+        out=$(echo $line | cut -f 2- -d ' ')
+        trace_name=$(echo $ts | cut -f 1 -d '.')
+        trace_url=https://raw.githubusercontent.com/once-upon-a-boot/traces/main/$trace_name.gz
+        start=$(( ts_ns - 100000 ))
+        end=$(( ts_ns + 100000 ))
+        label=$(echo $line | cut -f 2- -d ' ' | tr "\`" ' ')
+        cat << EOF
+{
+    'id': 'dev.perfetto.AddNote',
+    'args': ['$ts_us', \`$out\`, '#dddddd']
+},
+EOF
+    done
+}
+
 content()
 {
     id=0
@@ -71,6 +92,7 @@ const commands = [
  'id': 'dev.perfetto.ExpandTracksByRegex',
  'args': ['.*']
 },
+$(all_events)
 {
  'id': 'dev.perfetto.AddNote',
  'args': [ts_us.toString(), ts_label, '#ff2222']
