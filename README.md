@@ -14,3 +14,6 @@ perfetto use URL Startup commands to add a pin on timestamp + expand all lines
 - add URL startup command to perfetto to show pin for current time
 - perfetto set default timestamp to timeNs
 - show timestamp on log when selected
+
+Files packaging: include symlinks for project or fix path from
+uftrace_symbols.py, so symlinks get dereferenced properly?
