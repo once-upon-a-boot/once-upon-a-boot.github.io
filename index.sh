@@ -2,6 +2,20 @@
 
 set -euo pipefail
 
+expand_on_startup()
+{
+    cat << EOF
+import urllib.parse
+data = {
+  "id": "dev.perfetto.ExpandTracksByRegex",
+  "args": [".*"]
+}
+print(urllib.parse.urlencode(data))
+EOF
+}
+
+expand_start=$(expand_on_startup | python3) 
+
 content()
 {
     cat ./exec.log | while read line; do
@@ -14,7 +28,7 @@ content()
         start=$(( ts_ns - 100000 ))
         end=$(( ts_ns + 100000 ))
         cat << EOF
-<button class="output" onclick="trace('$trace_url', 'visStart=$start&visEnd=$end&ts=$ts_ns')">+</button>$out
+<button class="output" onclick="trace('$trace_url', 'visStart=$start&visEnd=$end&ts=$ts_ns&$expand_start')">+</button>$out
 EOF
     done
 }
