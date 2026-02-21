@@ -28,7 +28,7 @@ content()
         start=$(( ts_ns - 100000 ))
         end=$(( ts_ns + 100000 ))
         cat << EOF
-<button class="output" onclick="trace('$trace_url', 'visStart=$start&visEnd=$end&ts=$ts_ns&$expand_start')">+</button>$out
+<button class="output" onclick="trace('$trace_url', 'visStart=$start&visEnd=$end&ts=$ts_ns&startupCommands=$expand_start')">+</button>$out
 EOF
     done
 }
