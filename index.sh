@@ -57,7 +57,6 @@ cat << EOF
 </style>
 <script>
 var selected;
-var installed_side_panel_hook = false;
 function trace(selection, ts_us, ts_label, url, parameters) {
 viewer = document.getElementById('perfetto');
 b = document.getElementById(selection);
@@ -76,24 +75,20 @@ const commands = [
  'id': 'dev.perfetto.AddNote',
  'args': [ts_us.toString(), ts_label, '#ff2222']
 },
+{
+ 'id': 'dev.perfetto.SetTimestampFormat',
+ 'args': ['Milliseconds']
+},
+{
+ 'id': 'dev.perfetto.ToggleLeftSidebar',
+ 'args': []
+},
 ];
 
 const startup_commands = encodeURIComponent(JSON.stringify(commands));
 viewer.src = 'perfetto/#!/?url=' + url + '&' + parameters + '&startupCommands=' + startup_commands;
 viewer.contentWindow.location.reload();
-
-if (installed_side_panel_hook) {
-    return;
-}
-viewer.addEventListener('load', () => {
-    // focus to enable navigation keys directly
-    viewer.focus();
-    let sides = viewer.contentWindow.document.getElementsByClassName("pf-sidebar-button");
-    for (side_panel_button of sides) {
-        side_panel_button.click();
-    }
-});
-installed_side_panel_hook = true;
+viewer.focus();
 }
 </script>
 </head>
