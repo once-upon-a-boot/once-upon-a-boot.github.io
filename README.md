@@ -1,7 +1,6 @@
-- git clone https://github.com/google/perfetto
-  tools/install-build-deps --ui 
-  ui/build
-  ls out/ui/ui/dist
+- tools/install-build-deps --ui && ui/build && ls out/ui/ui/dist
+- ui/run-unittests
+- ui/run-integrationtests --rebaseline --no-docker
 
 TODO:
 - add all files for every subrepo + copy licenses
