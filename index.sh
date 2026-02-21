@@ -70,7 +70,7 @@ viewer.contentWindow.location.reload();
 viewer.focus();
 
 var event = new MouseEvent('mouseover', {})
-element.dispatchEvent(event);
+viewer.dispatchEvent(event);
 }
 </script>
 </head>
