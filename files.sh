@@ -6,5 +6,6 @@ set -euo pipefail
 # all files with .c .h and .s inside + all sources referenced in trace + git ls-files + ignored files .c .h .s
 #
 
-cat uftrace.data/*.dbg | grep '^L:' | cut -f 3- -d ' ' | sort -u | grep ^/ | sed -e "s#$(pwd)/##" |
+cat uftrace.data/*.dbg | grep '^L:' | cut -f 3- -d ' ' | sort -u | grep ^/ |
+    xargs -n1 readlink -f | sed -e "s#$(pwd)/##" |
     tar cvf files.tar -T -
