@@ -100,10 +100,6 @@ $events
  'args': [ts_us.toString(), ts_label, '#ff2222']
 },
 {
- 'id': 'dev.perfetto.SetTimestampFormat',
- 'args': ['Milliseconds']
-},
-{
  'id': 'dev.perfetto.ToggleLeftSidebar',
  'args': []
 },
