@@ -1,0 +1,88 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="uftrace-web-viewer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ace-builds@1.43.6/src/ace.js"></script>
+</head>
+
+<body onload="_main()">
+    <h1>Once upon a boot</h1>
+
+    <p>
+    Kernels, firmwares and bootloaders are complex to understand.<br>
+    This website gives you a unique opportunity to start exploring them, by showing what is happening when something is printed on the console.<br>
+    <br>
+    Based on QEMU with uftrace <a href="https://www.qemu.org/docs/master/about/emulation.html#uftrace">plugin</a>,
+    <a href="https://github.com/namhyung/uftrace">uftrace</a> and <a href="https://perfetto.dev/">perfetto</a> to visualize traces.
+    <br>
+    This website and traces are generated using
+    <a href="https://github.com/p-b-o/qemu-linux-stack/blob/master/uftrace-web-viewer.sh">uftrace-web-viewer</a>
+    from <a href="https://github.com/p-b-o/qemu-linux-stack">qemu-linux-stack</a>.
+    </p>
+
+    <h2>Choose your story</h2>
+
+    <p>
+    <b>Tutorial</b>: Zoom and scroll traces using W,A,S,D keys. Click on a function to see its source code.<br>
+    </p>
+
+    <h3><a target="_blank" href="./?action=view-trace&trace=https://raw.githubusercontent.com/once-upon-a-boot/boot-arm64/refs/heads/main/trace.json">boot-arm64</a></h3>
+    <pre>
+    Once upon a boot,
+    there was an arm64 cpu,
+    running on QEMU virt machine,
+    with <a href="https://trustedfirmware-a.readthedocs.io/en/latest/">TF-A</a> as a secure monitor,
+    <a href="https://docs.u-boot.org/en/latest/">U-boot</a> as a bootloader,
+    and the <a href="https://docs.kernel.org/">Linux</a> kernel...
+    [<a href="https://github.com/p-b-o/qemu-linux-stack/tree/master">src</a>]
+    </pre>
+
+    <h3><a target="_blank" href="./?action=view-trace&trace=https://raw.githubusercontent.com/once-upon-a-boot/boot-arm64-realm/refs/heads/main/trace.json">boot-arm64-realm</a></h3>
+    <pre>
+    Once upon a boot,
+    in the dark era of <a href="https://www.arm.com/architecture/security-features/arm-confidential-compute-architecture">confidential computing</a>,
+    there was an arm64 cpu,
+    running on QEMU virt machine,
+    with <a href="https://trustedfirmware-a.readthedocs.io/en/latest/">TF-A</a> as a secure monitor,
+    <a href="https://tf-rmm.readthedocs.io/en/latest/">RMM</a> as a realm management monitor,
+    <a href="https://github.com/tianocore/edk2">edk2</a> as a bootloader,
+    and the <a href="https://docs.kernel.org/">Linux</a> kernel.
+    After booting, someone called <a href="https://github.com/kvmtool/kvmtool">kvmtool</a>,
+    which booted a <a href="https://trustedfirmware-a.readthedocs.io/en/latest/components/realm-management-extension.html">Realm</a>...
+    [<a href="https://github.com/p-b-o/qemu-linux-stack/tree/rme">src</a>]
+    </pre>
+
+    <h3><a target="_blank" href="./?action=view-trace&trace=https://raw.githubusercontent.com/once-upon-a-boot/boot-arm64-optee/refs/heads/main/trace.json">boot-arm64-optee</a></h3>
+    <pre>
+    Once upon a boot,
+    there was an arm64 cpu,
+    running on QEMU virt machine,
+    with <a href="https://trustedfirmware-a.readthedocs.io/en/latest/">TF-A</a> as a secure monitor,
+    <a href="https://hafnium.readthedocs.io/en/latest/">Hafnium</a> as a secure partition manager,
+    <a href="https://optee.readthedocs.io/en/latest/">OP-TEE</a> as a trusted execution environment,
+    <a href="https://docs.u-boot.org/en/latest/">U-boot</a> as a bootloader,
+    and the <a href="https://docs.kernel.org/">Linux</a> kernel.
+    After booting, someone called <a href="https://optee.readthedocs.io/en/latest/building/gits/optee_examples/optee_examples.html#hello-world">hello world</a> OP-TEE application as an example...
+    [<a href="https://github.com/p-b-o/qemu-linux-stack/tree/optee">src</a>]
+    </pre>
+
+    <h3><a target="_blank" href="./?action=view-trace&trace=https://raw.githubusercontent.com/once-upon-a-boot/boot-riscv64/refs/heads/main/trace.json">boot-riscv64</a></h3>
+    <pre>
+    Once upon a boot,
+    there was a riscv64 cpu,
+    running on QEMU virt machine,
+    with <a href="https://github.com/riscv-software-src/opensbi">opensbi</a> as supervisor,
+    and the <a href="https://docs.kernel.org/">Linux</a> kernel...
+    [<a href="https://github.com/p-b-o/qemu-linux-stack/tree/riscv64">src</a>]
+    </pre>
+
+    <h3><a target="_blank" href="./?action=view-trace&trace=https://raw.githubusercontent.com/once-upon-a-boot/boot-x86-64/refs/heads/main/trace.json">boot-x86-64</a></h3>
+    <pre>
+    Once upon a boot,
+    there was a x86-64 cpu,
+    running on QEMU pc-i440fx machine,
+    with <a href="https://github.com/tianocore/edk2">edk2</a> as a bootloader (not covered in this story),
+    and the <a href="https://docs.kernel.org/">Linux</a> kernel...
+    [<a href="https://github.com/p-b-o/qemu-linux-stack/tree/x86_64">src</a>]
+    </pre>
+</body>
