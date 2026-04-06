@@ -12,6 +12,13 @@ var ace;
 var SOURCES_BASE_URL;
 
 /**
+ * Hold base url for trace.
+ * Needed because perfetto will call indirectly view_source.
+ * @type {string}
+ */
+var TRACE_URL;
+
+/**
  * @typedef Subtrace
  * @property {number} start - timestamp at start
  * @property {number} end - timestamp at end
@@ -32,7 +39,7 @@ var SOURCES_BASE_URL;
  */
 
 /* Display a source file. Called (externally) on slice load in perfetto. */
-async function view_source(/** @type string */ url) {
+async function view_source(/** @type string */ url, /** @type number */ ts) {
 	const orig_url = url;
 	const url_components = url.split(":");
 	let line_str = url_components[url_components.length - 1];
@@ -68,6 +75,16 @@ async function view_source(/** @type string */ url) {
 		file = file.substring(1);
 	}
 	src_url.textContent = `${file}:${line}`;
+	if (ts !== 0) {
+		const event_url = document.getElementById("event_url");
+		if (!event_url) {
+			console.assert(event_url != null, "missing event_url element");
+			return;
+		}
+		const event_url_full = `./?action=view-event&timestamp=${ts}&trace=${TRACE_URL}`;
+		event_url.setAttribute("href", event_url_full);
+		event_url.textContent = "event";
+	}
 }
 
 /* Return html fragment for a given trace. */
@@ -159,14 +176,14 @@ function perfetto_url(
 		},
 	];
 
+	const main_event_color = "#ff7777";
+	const secondary_events_color = "#dddddd";
+
 	for (const e of trace.events) {
 		if (e.ts < subtrace.start || e.ts > subtrace.end) {
 			continue;
 		}
-		let color = "#dddddd";
-		if (ts === e.ts) {
-			color = "#ff7777";
-		}
+		const color = ts === e.ts ? main_event_color : secondary_events_color;
 		commands.push({
 			id: "dev.perfetto.AddNoteAtTimestamp",
 			args: [e.ts.toString(), e.label, color],
@@ -202,6 +219,7 @@ async function page_trace(/** @type string|null */ trace_url) {
 	if (!trace_url) {
 		throw "trace_url";
 	}
+	TRACE_URL = trace_url;
 	const trace = await fetch_trace(trace_url);
 
 	document.body.innerHTML = `
@@ -222,7 +240,7 @@ async function page_source(
     <div class="fullscreen_source_viewer" id="source_viewer"></div>
     <a href="" id="source_url" target="_blank"></a>
     `;
-	view_source(source_url);
+	view_source(source_url, 0);
 }
 
 async function page_event(
@@ -232,7 +250,24 @@ async function page_event(
 	if (!trace_url) {
 		throw "missing trace_url";
 	}
+	TRACE_URL = trace_url;
 	const trace = await fetch_trace(trace_url);
+
+	let event_exists = false;
+	for (const e of trace.events) {
+		if (e.ts === ts) {
+			event_exists = true;
+			break;
+		}
+	}
+	if (!event_exists) {
+		trace.events.push({ ts: ts, label: "..." });
+		trace.events.sort(
+			(/** @type TraceEvent */ a, /** @type TraceEvent */ b) => {
+				return a.ts - b.ts;
+			},
+		);
+	}
 
 	SOURCES_BASE_URL = trace.src_url;
 	if (!SOURCES_BASE_URL.startsWith("http")) {
@@ -254,6 +289,8 @@ async function page_event(
     </div>
     <div class="embedded_source_viewer" id="source_viewer"></div>
     <a href="" id="source_url" target="_blank"></a>
+    |
+    <a href="" id="event_url" target="_blank"></a>
     `;
 
 	document.getElementsByClassName("main_event")[0]?.scrollIntoView();
