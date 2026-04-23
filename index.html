@@ -10,14 +10,26 @@
 
     <p>
     Kernels, firmwares and bootloaders are complex to understand.<br>
-    This website gives you a unique opportunity to start exploring them, by showing what is happening when something is printed on the console.<br>
+    This website gives you a unique opportunity to start exploring them, by showing what is happening when something is printed on the console.
+    <details>
+    <summary>Click here to see implementation details</summary>
     <br>
     Based on QEMU with uftrace <a href="https://www.qemu.org/docs/master/about/emulation.html#uftrace">plugin</a>,
     <a href="https://github.com/namhyung/uftrace">uftrace</a> and <a href="https://perfetto.dev/">perfetto</a> to visualize traces.
     <br>
-    This website and traces are generated using
-    <a href="https://github.com/p-b-o/qemu-linux-stack/blob/master/uftrace-web-viewer.sh">uftrace-web-viewer</a>
-    from <a href="https://github.com/p-b-o/qemu-linux-stack">qemu-linux-stack</a>.
+    Binaries, traces and website are generated using <a href="https://github.com/p-b-o/qemu-linux-stack">qemu-linux-stack</a>.
+    <br>
+    <pre>
+    git clone https://gitlab.com/qemu-project/qemu
+    cd qemu && ./configure && ninja -C build && cd ..
+
+    git clone <a href="https://github.com/p-b-o/qemu-linux-stack">https://github.com/p-b-o/qemu-linux-stack</a>
+    cd qemu-linux-stack
+    ./build.sh
+    env INIT=true ./trace.sh ../qemu/build/qemu-system-aarch64
+    ./uftrace-web-viewer.sh
+    </pre>
+    </details>
     </p>
 
     <p>
